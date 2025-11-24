@@ -117,7 +117,8 @@ def test_sample_output():
     print("\n📄 Generating sample SVG files...\n")
     
     # Create output directory
-    output_dir = '/tmp/box_designs'
+    import tempfile
+    output_dir = os.path.join(tempfile.gettempdir(), 'box_designs')
     os.makedirs(output_dir, exist_ok=True)
     
     # Sample box 1: Standard shipping box

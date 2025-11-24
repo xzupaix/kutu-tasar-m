@@ -39,15 +39,12 @@ class SVGGenerator:
         # Bottom flap
         self._draw_rectangle(dwg, x0 + W, y0, W, H, 'Taban Kanat / Bottom Flap')
         
-        # Bottom
+        # Bottom (center panel)
         self._draw_rectangle(dwg, x0 + W, y0 + H, W, L, 'Taban / Bottom')
         
         # Sides
         self._draw_rectangle(dwg, x0, y0 + H, W, L, 'Yan / Side 1')
         self._draw_rectangle(dwg, x0 + W * 2, y0 + H, W, L, 'Yan / Side 2')
-        
-        # End panels
-        self._draw_rectangle(dwg, x0 + W, y0 + H, W, L, 'Ön / Front', fill='none')
         
         # Top
         self._draw_rectangle(dwg, x0 + W, y0 + H + L, W, L, 'Üst / Top')

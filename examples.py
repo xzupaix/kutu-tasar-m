@@ -90,7 +90,8 @@ def example_4_generate_svgs():
     print("="*60)
     
     # Çıktı dizini oluştur / Create output directory
-    output_dir = '/tmp/example_boxes'
+    import tempfile
+    output_dir = os.path.join(tempfile.gettempdir(), 'example_boxes')
     os.makedirs(output_dir, exist_ok=True)
     
     # Standart kutu SVG'si
